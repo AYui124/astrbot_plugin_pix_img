@@ -1,0 +1,24 @@
+{
+  "api_url": {
+    "description": "获取随机图片的API地址（GET请求）",
+    "type": "string",
+    "hint": "完整的API地址，例如 http://localhost:5000/api/public/random/artwork"
+  },
+  "api_secret": {
+    "description": "API的Secret Key",
+    "type": "string",
+    "hint": "用于API鉴权的密钥，会添加到请求头 X-API-Key 中"
+  },
+  "user_limit": {
+    "description": "用户限制次数",
+    "type": "int",
+    "hint": "每个用户在时间窗口内的最大调用次数",
+    "default": 5
+  },
+  "limit_window": {
+    "description": "限制时间窗口",
+    "type": "int",
+    "hint": "限制时间窗口长度（单位：秒），默认60秒",
+    "default": 60
+  }
+}
